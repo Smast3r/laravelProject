@@ -13,12 +13,17 @@ use App\Http\Controllers\PostController ;
 |
 */
 
-/*
+
 
  Route::get('/', function () {
     return view('welcome');
 
 });
-*/
+
 
 Route::get('/c',[Postcontroller::class,'index']);
+
+Route::get('/contact/{id}',[Postcontroller::class,'contact']) ;
+
+
+Route::resource('Posts',Postcontroller::class) ;

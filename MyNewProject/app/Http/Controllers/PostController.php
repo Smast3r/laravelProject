@@ -81,4 +81,9 @@ class PostController extends Controller
     {
         //
     }
+
+    public function contact($id){
+       // return view('contact')->with('id',$id);
+        return view('contact',compact('id')) ;
+    }
 }
