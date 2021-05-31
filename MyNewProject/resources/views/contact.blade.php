@@ -1,11 +1,14 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-   <title>whatever</title>
-</head>
-<body>
+@extends('layputs.app')
 
-<h1>Contact Page !! {{$id}}</h1>
 
-</body>
-</html>
+@section('content')
+
+    <h1 class="bg-gray-500"> this is our contact page </h1>
+
+@endsection
+
+@section('footer')
+
+    <h1> this is our footer</h1>
+
+@endsection
